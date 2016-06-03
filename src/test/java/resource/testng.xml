@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FornovaSuite">
+
+    <test name="Suite1">
+        <groups>
+            <run>
+                <include name="ChainManagement"/>
+                <include name="CampaignManagement"/>
+                <include name="HotelManagement"/>
+                <include name="Login"/>
+                <include name="UserManagement"/>
+                <include name="ReportMod"/>
+            </run>
+        </groups>
+
+
+        <classes>
+            <class name="FornovaTestSuite.TestSuite" />
+        </classes>
+    </test>
+
+
+</suite>

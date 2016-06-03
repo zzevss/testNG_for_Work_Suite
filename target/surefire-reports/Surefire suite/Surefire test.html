@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 25 15:42:11 EEST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>943 seconds (943443 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMChangeClusterHotel_1()'><b>CMChangeClusterHotel_1</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>10</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMduplicateDelete_2()'><b>CMduplicateDelete_2</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>20</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMeditCampaign_3()'><b>CMeditCampaign_3</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>27</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMgroupBy_4()'><b>CMgroupBy_4</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>17</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMmasterDetailOnOff_5()'><b>CMmasterDetailOnOff_5</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>10</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMsearchInputClear_6()'><b>CMsearchInputClear_6</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>8</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.CMtypeSymb_7()'><b>CMtypeSymb_7</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>15</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.ChainManagementComboboxTest_8()'><b>ChainManagementComboboxTest_8</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>26</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.ChainManagementEditChangeLogo_9()'><b>ChainManagementEditChangeLogo_9</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>54</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.ChainManagementNewChain_10()'><b>ChainManagementNewChain_10</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>27</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.ChainManagementResetCancel_11()'><b>ChainManagementResetCancel_11</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>30</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.ChainManagementSearchField_12()'><b>ChainManagementSearchField_12</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>35</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.HMeditHotel_13()'><b>HMeditHotel_13</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>43</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.HMnewCluster_14()'><b>HMnewCluster_14</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>40</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.HMnewHotel_15()'><b>HMnewHotel_15</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>56</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.HMsearchFormTest_16()'><b>HMsearchFormTest_16</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>54</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMaddNewUser_21()'><b>UMaddNewUser_21</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>65</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMchangePasswordWrong_22()'><b>UMchangePasswordWrong_22</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>72</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMchangeUserPassword_23()'><b>UMchangeUserPassword_23</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>87</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMeditProfile_24()'><b>UMeditProfile_24</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>91</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMinviteSearch_25()'><b>UMinviteSearch_25</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>38</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMresendInvitation_26()'><b>UMresendInvitation_26</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>34</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMresetCancel_27()'><b>UMresetCancel_27</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>21</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.UMsearchTest_28()'><b>UMsearchTest_28</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>13</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.loginFogot_17()'><b>loginFogot_17</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>5</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.loginNegativeWrongLogin_18()'><b>loginNegativeWrongLogin_18</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>9</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.loginNegativeWrongPass_19()'><b>loginNegativeWrongPass_19</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>9</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+<tr>
+<td title='FornovaTestSuite.TestSuite.loginPositive_20()'><b>loginPositive_20</b><br>Test class: FornovaTestSuite.TestSuite</td>
+<td></td>
+<td>13</td>
+<td>FornovaTestSuite.TestSuite@96532d6</td></tr>
+</table><p>
+</body>
+</html>

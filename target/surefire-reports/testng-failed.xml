@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [FornovaSuite]">
+  <test name="Suite1(failed)">
+    <groups>
+      <run>
+        <include name="ChainManagement"/>
+        <include name="CampaignManagement"/>
+        <include name="HotelManagement"/>
+        <include name="Login"/>
+        <include name="UserManagement"/>
+        <include name="ReportMod"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="FornovaTestSuite.TestSuite">
+        <methods>
+          <include name="CMgroupBy_4"/>
+          <include name="UMinviteSearch_25"/>
+          <include name="loginNegativeWrongPass_19"/>
+          <include name="CMsearchInputClear_6"/>
+          <include name="CMtypeSymb_7"/>
+          <include name="ChainManagementResetCancel_11"/>
+          <include name="loginPositive_20"/>
+          <include name="CMeditCampaign_3"/>
+          <include name="HMeditHotel_13"/>
+          <include name="UMsearchTest_28"/>
+          <include name="UMchangePasswordWrong_22"/>
+          <include name="REmakeChainBrandsReport_29"/>
+          <include name="loginFogot_17"/>
+          <include name="setUp"/>
+          <include name="CMChangeClusterHotel_1"/>
+          <include name="HMnewHotel_15"/>
+          <include name="UMresendInvitation_26"/>
+          <include name="ChainManagementComboboxTest_8"/>
+          <include name="HMnewCluster_14"/>
+          <include name="REdeleteHotelChainReport_31"/>
+          <include name="ChainManagementEditChangeLogo_9"/>
+          <include name="ChainManagementSearchField_12"/>
+          <include name="UMchangeUserPassword_23"/>
+          <include name="tearDown"/>
+          <include name="HMsearchFormTest_16"/>
+          <include name="UMeditProfile_24"/>
+          <include name="UMaddNewUser_21"/>
+          <include name="loginNegativeWrongLogin_18"/>
+          <include name="ChainManagementNewChain_10"/>
+          <include name="REmakeHotelReport_30"/>
+          <include name="CMduplicateDelete_2"/>
+          <include name="CMmasterDetailOnOff_5"/>
+          <include name="UMresetCancel_27"/>
+        </methods>
+      </class> <!-- FornovaTestSuite.TestSuite -->
+    </classes>
+  </test> <!-- Suite1(failed) -->
+</suite> <!-- Failed suite [FornovaSuite] -->

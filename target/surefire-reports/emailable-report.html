@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Suite1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">31</td><td class="numi">0.1 seconds</td><td class="numi">CampaignManagement ChainManagement UserManagement Login ReportMod HotelManagement </td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Suite1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="31">FornovaTestSuite.TestSuite</td><td><a href="#m1"><b>CMChangeClusterHotel_1</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354107</td><td class="numi">74</td></tr><tr class="failedodd"><td><a href="#m2"><b>CMduplicateDelete_2</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354186</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m3"><b>CMeditCampaign_3</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354188</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m4"><b>CMgroupBy_4</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354189</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m5"><b>CMmasterDetailOnOff_5</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354191</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m6"><b>CMsearchInputClear_6</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354193</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m7"><b>CMtypeSymb_7</b> (CampaignManagement) </a></td><td class="numi">1</td><td>1464876354194</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m8"><b>ChainManagementComboboxTest_8</b> (ChainManagement) </a></td><td class="numi">1</td><td>1464876354195</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m9"><b>ChainManagementEditChangeLogo_9</b> (ChainManagement) </a></td><td class="numi">1</td><td>1464876354197</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m10"><b>ChainManagementNewChain_10</b> (ChainManagement) </a></td><td class="numi">1</td><td>1464876354198</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m11"><b>ChainManagementResetCancel_11</b> (ChainManagement) </a></td><td class="numi">1</td><td>1464876354199</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m12"><b>ChainManagementSearchField_12</b> (ChainManagement) </a></td><td class="numi">1</td><td>1464876354199</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m13"><b>HMeditHotel_13</b> (HotelManagement) </a></td><td class="numi">1</td><td>1464876354200</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m14"><b>HMnewCluster_14</b> (HotelManagement) </a></td><td class="numi">1</td><td>1464876354201</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m15"><b>HMnewHotel_15</b> (HotelManagement) </a></td><td class="numi">1</td><td>1464876354202</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m16"><b>HMsearchFormTest_16</b> (HotelManagement) </a></td><td class="numi">1</td><td>1464876354203</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m17"><b>REdeleteHotelChainReport_31</b> (ReportMod) </a></td><td class="numi">1</td><td>1464876354204</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m18"><b>REmakeChainBrandsReport_29</b> (ReportMod) </a></td><td class="numi">1</td><td>1464876354205</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m19"><b>REmakeHotelReport_30</b> (ReportMod) </a></td><td class="numi">1</td><td>1464876354206</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m20"><b>UMaddNewUser_21</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354207</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m21"><b>UMchangePasswordWrong_22</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354207</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m22"><b>UMchangeUserPassword_23</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354208</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m23"><b>UMeditProfile_24</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354211</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m24"><b>UMinviteSearch_25</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354212</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m25"><b>UMresendInvitation_26</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354213</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m26"><b>UMresetCancel_27</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354214</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m27"><b>UMsearchTest_28</b> (UserManagement) </a></td><td class="numi">1</td><td>1464876354216</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m28"><b>loginFogot_17</b> (Login) </a></td><td class="numi">1</td><td>1464876354217</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m29"><b>loginNegativeWrongLogin_18</b> (Login) </a></td><td class="numi">1</td><td>1464876354218</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m30"><b>loginNegativeWrongPass_19</b> (Login) </a></td><td class="numi">1</td><td>1464876354220</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m31"><b>loginPositive_20</b> (Login) </a></td><td class="numi">1</td><td>1464876354221</td><td class="numi">1</td></tr>
+</table>
+<h1>Suite1</h1>
+<h2 id="m1">FornovaTestSuite.TestSuite:REdeleteHotelChainReport_31</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.REdeleteHotelChainReport_31(TestSuite.java:2239)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">FornovaTestSuite.TestSuite:loginNegativeWrongPass_19</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.loginNegativeWrongPass_19(TestSuite.java:1131)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">FornovaTestSuite.TestSuite:ChainManagementResetCancel_11</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.ChainManagementResetCancel_11(TestSuite.java:545)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">FornovaTestSuite.TestSuite:CMChangeClusterHotel_1</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMChangeClusterHotel_1(TestSuite.java:66)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">FornovaTestSuite.TestSuite:REmakeHotelReport_30</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.REmakeHotelReport_30(TestSuite.java:2185)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">FornovaTestSuite.TestSuite:CMtypeSymb_7</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMtypeSymb_7(TestSuite.java:312)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">FornovaTestSuite.TestSuite:UMeditProfile_24</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMeditProfile_24(TestSuite.java:1655)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">FornovaTestSuite.TestSuite:ChainManagementNewChain_10</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.ChainManagementNewChain_10(TestSuite.java:494)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">FornovaTestSuite.TestSuite:loginPositive_20</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.loginPositive_20(TestSuite.java:1156)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">FornovaTestSuite.TestSuite:loginNegativeWrongLogin_18</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.loginNegativeWrongLogin_18(TestSuite.java:1108)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">FornovaTestSuite.TestSuite:CMgroupBy_4</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMgroupBy_4(TestSuite.java:202)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">FornovaTestSuite.TestSuite:UMresendInvitation_26</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMresendInvitation_26(TestSuite.java:1946)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">FornovaTestSuite.TestSuite:CMsearchInputClear_6</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMsearchInputClear_6(TestSuite.java:275)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">FornovaTestSuite.TestSuite:UMresetCancel_27</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMresetCancel_27(TestSuite.java:2033)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">FornovaTestSuite.TestSuite:ChainManagementEditChangeLogo_9</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.ChainManagementEditChangeLogo_9(TestSuite.java:379)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">FornovaTestSuite.TestSuite:UMchangeUserPassword_23</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMchangeUserPassword_23(TestSuite.java:1489)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">FornovaTestSuite.TestSuite:UMaddNewUser_21</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMaddNewUser_21(TestSuite.java:1200)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">FornovaTestSuite.TestSuite:ChainManagementComboboxTest_8</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.ChainManagementComboboxTest_8(TestSuite.java:339)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">FornovaTestSuite.TestSuite:CMduplicateDelete_2</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMduplicateDelete_2(TestSuite.java:97)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">FornovaTestSuite.TestSuite:UMchangePasswordWrong_22</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMchangePasswordWrong_22(TestSuite.java:1329)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">FornovaTestSuite.TestSuite:UMinviteSearch_25</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMinviteSearch_25(TestSuite.java:1844)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">FornovaTestSuite.TestSuite:CMmasterDetailOnOff_5</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMmasterDetailOnOff_5(TestSuite.java:234)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">FornovaTestSuite.TestSuite:loginFogot_17</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.loginFogot_17(TestSuite.java:1081)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">FornovaTestSuite.TestSuite:REmakeChainBrandsReport_29</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.REmakeChainBrandsReport_29(TestSuite.java:2133)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">FornovaTestSuite.TestSuite:HMnewHotel_15</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.HMnewHotel_15(TestSuite.java:898)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">FornovaTestSuite.TestSuite:HMsearchFormTest_16</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.HMsearchFormTest_16(TestSuite.java:980)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">FornovaTestSuite.TestSuite:ChainManagementSearchField_12</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.ChainManagementSearchField_12(TestSuite.java:618)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">FornovaTestSuite.TestSuite:HMeditHotel_13</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.HMeditHotel_13(TestSuite.java:715)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">FornovaTestSuite.TestSuite:HMnewCluster_14</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.HMnewCluster_14(TestSuite.java:823)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">FornovaTestSuite.TestSuite:CMeditCampaign_3</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.CMeditCampaign_3(TestSuite.java:133)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">FornovaTestSuite.TestSuite:UMsearchTest_28</h2>
+<div style="padding-left:3em">
+<p>The driver is not executable: /home/zzevss/Downloads/chromedriver</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)
+<br/>at FornovaTestSuite.TestSuite.UMsearchTest_28(TestSuite.java:2079)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
